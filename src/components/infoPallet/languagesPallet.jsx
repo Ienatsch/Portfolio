@@ -9,6 +9,7 @@ function LanguagesPallet() {
                 <ul>
                     <li>JavaScript</li>
                     <li>C#</li>
+                    <li>Go</li>
                     <li>PHP</li>
                     <li>SQL</li>
                 </ul>
