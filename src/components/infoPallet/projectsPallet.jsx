@@ -12,7 +12,7 @@ function ProjectsPallet() {
         <div className="pallet">
             <div className="projectsContainer">
                 <figure onClick={() => routeToProject(Config.projectUrls.SEEKER)}>
-                    <img src="" alt="Seeker-Project" />
+                    <img src="https://ienatsch.github.io/Portfolio/images/seekerImg.png" alt="Seeker-Project" />
                     <figcaption>SEEKER</figcaption>
                 </figure>
                 <figure onClick={() => routeToProject(Config.projectUrls.NATPK)}>
