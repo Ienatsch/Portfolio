@@ -16,7 +16,7 @@ function ProjectsPallet() {
                     <figcaption>SEEKER</figcaption>
                 </figure>
                 <figure onClick={() => routeToProject(Config.projectUrls.NATPK)}>
-                    <img src="" alt="NATPK-Project" />
+                    <img src="https://ienatsch.github.io/Portfolio/images/natpkImg.png" alt="NATPK-Project" />
                     <figcaption>NATPK</figcaption>
                 </figure>
             </div>
