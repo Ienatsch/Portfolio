@@ -1,0 +1,105 @@
+$breakMed: 800px;
+$breakLarge: 1200px;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.mainWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .particles {
+        position: fixed;
+        right: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background: #042b3c;
+    }
+
+    .mainContainer {
+        position: relative;
+        background: rgb(49, 204, 231);
+        width: 80vw;
+        height: 30vh;
+        min-height: 250px;
+        box-shadow: -2px 0px 15px #042b3c, 2px 0px 15px #042b3c;
+        z-index: 2;
+
+        @media only screen and (min-width: $breakMed) {
+            z-index: 0;
+            width: 350px;
+            height: 600px;
+        }   
+    }
+
+    .myImage {
+        position: relative;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 20%;
+        img {
+            width: 150px;
+            height: 100%;
+
+            @media only screen and (min-width: $breakMed) {
+                width: 200px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .nameTitle {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 1.5em;
+
+        @media only screen and (min-width: $breakMed) {
+            font-size: 1em;
+            margin-top: 10%;
+        }
+    }
+
+    .socialLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 30px;
+        color: #ffffff;
+        margin-top: 25px;
+
+        @media only screen and (min-width: $breakMed) {
+            margin-top: 50px;
+        }
+
+        svg {
+            &:hover {
+                color: gold;
+            }
+        
+            &:focus {
+                color: gold;
+                outline: none;
+            }
+        }      
+    }
+
+    @media only screen and (min-width: $breakMed) {
+        flex-direction: row;
+    }
+}

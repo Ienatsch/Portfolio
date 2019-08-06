@@ -1,0 +1,112 @@
+.pallet {
+  background: #2587b4;
+  width: 70vw;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .pallet {
+    width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .pallet {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+}
+
+.pallet .palletList {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .pallet .palletList {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .pallet .palletList:nth-child(3) {
+    width: 100%;
+    margin-top: -100px;
+  }
+}
+
+.pallet .palletList h4 {
+  font-size: 20px;
+  color: gold;
+  margin-bottom: 8px;
+}
+
+.pallet .palletList ul {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.pallet .projectsContainer {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  .pallet .projectsContainer {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pallet .formContainer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pallet form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  width: 50%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pallet form textarea {
+  height: 30%;
+}
+
+.pallet form #submitButton {
+  width: 50%;
+}
+/*# sourceMappingURL=pallet.css.map */

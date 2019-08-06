@@ -1,0 +1,70 @@
+.sideBarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  min-height: 70px;
+  width: 80vw;
+  background: #2587b4;
+  -webkit-box-shadow: 0px 2px 15px #042b3c;
+          box-shadow: 0px 2px 15px #042b3c;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 800px) {
+  .sideBarContainer {
+    width: 80px;
+    height: 550px;
+    min-height: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 50px;
+    z-index: 0;
+  }
+}
+
+.sidebarButton {
+  background: #2587b4;
+  font-size: 30px;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebarButton:hover {
+  -webkit-box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
+          box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
+  z-index: 1;
+  color: gold;
+}
+
+.sidebarButton:focus {
+  -webkit-box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
+          box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
+  z-index: 1;
+  color: gold;
+  outline: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .sidebarButton {
+    height: 25%;
+  }
+}
+
+.sidebarButton p {
+  font-size: .5em;
+}
+/*# sourceMappingURL=sidebar.css.map */

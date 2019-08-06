@@ -1,0 +1,80 @@
+$breakMed: 800px;
+$breakLarge: 1200px;
+
+.pallet {
+    background: #2587b4;
+    width: 70vw;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+
+    @media only screen and (min-width: $breakMed) {
+        width: 30vw;
+    }
+    @media only screen and (min-width: $breakLarge) {
+        align-items: normal;
+    }
+
+    .palletList {
+        width: 100%;
+
+        @media only screen and (min-width: $breakLarge) {
+            width: 50%;
+            padding-top: 50px;
+
+            &:nth-child(3) {
+                width: 100%;
+                margin-top: -100px;
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            color: gold;
+            margin-bottom: 8px;
+        }
+        
+        ul {
+            list-style-type: none;
+            line-height: 30px;
+        }
+    }
+    
+    .projectsContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1;
+
+        @media only screen and (min-width: $breakLarge) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .formContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+
+        textarea {
+            height: 30%;
+        }
+
+        #submitButton {
+            width: 50%;
+        }
+    }
+}
