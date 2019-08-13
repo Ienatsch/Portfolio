@@ -2,5 +2,9 @@
     "projectUrls": {
         "SEEKER": "https://ienatsch.github.io/SEEKER/",
         "NATPK": "https://ienatsch.github.io/NATPK/"
+    },
+    "repoUrls": {
+        "SEEKER": "https://github.com/Ienatsch/SEEKER",
+        "NATPK": "https://github.com/Ienatsch/NATPK"
     }
 }
