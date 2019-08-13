@@ -1,5 +1,7 @@
+@import url(c:\Users\diena\Documents\Desktop Icons\Code Master Folder\GitHub Pages\portfolio\src\main.css);
 .pallet {
-  background: #2587b4;
+  position: relative;
+  background: #1c6a8f;
   width: 70vw;
   min-width: 400px;
   height: 550px;
@@ -26,6 +28,10 @@
   width: 0 !important;
 }
 
+.pallet h3 {
+  display: none;
+}
+
 @media only screen and (min-width: 800px) {
   .pallet {
     width: 30vw;
@@ -34,10 +40,43 @@
 
 @media only screen and (min-width: 1200px) {
   .pallet {
+    min-width: 500px;
     -webkit-box-align: normal;
         -ms-flex-align: normal;
             align-items: normal;
   }
+  .pallet h3 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-family: 'Enriqueta', serif;
+    font-size: 25px;
+    color: #31cce7;
+    border-bottom: 2px solid #ffffff56;
+  }
+  .pallet h3 .titleAccent {
+    color: #ffffff;
+  }
+}
+
+.pallet .aboutPallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  line-height: 25px;
+}
+
+.pallet .aboutPallet .aboutWrapper {
+  width: 80%;
 }
 
 .pallet .palletList {
@@ -57,13 +96,18 @@
 
 .pallet .palletList h4 {
   font-size: 20px;
-  color: gold;
-  margin-bottom: 8px;
+  font-family: 'Enriqueta', serif;
+  color: #31cce7;
+  margin: 8px 0 8px 0;
 }
 
 .pallet .palletList ul {
   list-style-type: none;
   line-height: 30px;
+}
+
+.pallet .palletList ul li {
+  color: #ffffff;
 }
 
 .pallet .projectsContainer {
@@ -76,6 +120,7 @@
 
 @media only screen and (min-width: 1200px) {
   .pallet .projectsContainer {
+    margin-top: 50px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 20px;
@@ -104,6 +149,7 @@
   height: 30px;
   color: white;
   font-size: 1.3em;
+  font-family: 'Enriqueta', serif;
 }
 
 .pallet .projectsContainer .figIcons {
@@ -193,14 +239,24 @@
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 10% 0 10%;
   -ms-grid-column: 2;
   grid-column: 2/2;
   -ms-grid-row: 4;
   grid-row: 4/4;
   width: 50%;
+  min-width: 100px;
+  min-height: 40px;
   height: 50%;
+  font-size: 15px;
+  font-family: 'Enriqueta', serif;
+  background: #ffffff;
+}
+
+.pallet form #submitButton .submitIcon {
+  color: #1c6a8f;
+  margin-top: 3px;
 }
 /*# sourceMappingURL=pallet.css.map */

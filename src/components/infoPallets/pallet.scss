@@ -1,8 +1,14 @@
+@import "../../main.css";
+
 $breakMed: 800px;
 $breakLarge: 1200px;
+$lightBlue: #31cce7;
+$midBlue: #1c6a8f;
+$darkBlue: #042b3c;
 
 .pallet {
-    background: #2587b4;
+    position: relative;
+    background: $midBlue;
     width: 70vw;
     min-width: 400px;
     height: 550px;
@@ -20,11 +26,44 @@ $breakLarge: 1200px;
         width: 0 !important 
     }
 
+    h3 {
+        display: none;
+    }
+
     @media only screen and (min-width: $breakMed) {
         width: 30vw;
     }
     @media only screen and (min-width: $breakLarge) {
+        min-width: 500px;
         align-items: normal;
+
+        h3 {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 15px;
+            font-family: 'Enriqueta', serif; 
+            font-size: 25px;
+            color: $lightBlue;
+            border-bottom: 2px solid #ffffff56;
+    
+            .titleAccent {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .aboutPallet {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            line-height: 25px;
+
+            .aboutWrapper {
+                width: 80%;
+            }
     }
 
     .palletList {
@@ -42,13 +81,18 @@ $breakLarge: 1200px;
 
         h4 {
             font-size: 20px;
-            color: gold;
-            margin-bottom: 8px;
+            font-family: 'Enriqueta', serif;
+            color: $lightBlue;
+            margin: 8px 0 8px 0;
         }
         
         ul {
             list-style-type: none;
             line-height: 30px;
+
+            li {
+                color: #ffffff;
+            }
         }
     }
     
@@ -58,6 +102,7 @@ $breakLarge: 1200px;
         grid-template-columns: 1;
 
         @media only screen and (min-width: $breakLarge) {
+            margin-top: 50px;
             grid-template-columns: repeat(2, 1fr);
             column-gap: 20px;
         }
@@ -72,11 +117,12 @@ $breakLarge: 1200px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: rgb(49, 204, 231);
+            background: $lightBlue;
             margin: 0 10px 0 10px;
             height: 30px;
             color: white;
             font-size: 1.3em;
+            font-family: 'Enriqueta', serif;
         }
 
         .figIcons {
@@ -139,11 +185,22 @@ $breakLarge: 1200px;
             display: flex;
             align-self: center;
             justify-self: center;
-            justify-content: center;
+            justify-content: space-around;
+            padding: 0 10% 0 10%;
             grid-column: 2/2;
             grid-row: 4/4;
             width: 50%;
+            min-width: 100px;
+            min-height: 40px;
             height: 50%;
+            font-size: 15px;
+            font-family: 'Enriqueta', serif;
+            background: #ffffff;
+            
+            .submitIcon {
+                color: $midBlue;
+                margin-top: 3px;
+            }
         }
     }
 }

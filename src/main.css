@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Enriqueta|Raleway&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .mainWrapper {
@@ -21,6 +26,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .mainWrapper .particles {
@@ -78,14 +84,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  height: 100px;
   text-align: center;
   margin-top: 10%;
   font-size: 1.5em;
+  font-family: 'Enriqueta', serif;
+  background: #042b3c;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 800px) {
@@ -115,6 +128,14 @@
   .mainWrapper .socialLinks {
     margin-top: 50px;
   }
+}
+
+.mainWrapper .socialLinks button {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #31cce7;
+  margin-top: 25px;
 }
 
 .mainWrapper .socialLinks svg:hover {

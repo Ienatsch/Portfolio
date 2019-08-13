@@ -1,3 +1,4 @@
+@import url(c:\Users\diena\Documents\Desktop Icons\Code Master Folder\GitHub Pages\portfolio\src\main.css);
 .sideBarContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,9 +15,9 @@
   height: 70px;
   min-height: 70px;
   width: 80vw;
-  background: #2587b4;
-  -webkit-box-shadow: 0px 2px 15px #042b3c;
-          box-shadow: 0px 2px 15px #042b3c;
+  background: #1c6a8f;
+  -webkit-box-shadow: 0px 2px 15px #053c53;
+          box-shadow: 0px 2px 15px #053c53;
   z-index: 1;
 }
 
@@ -35,8 +36,9 @@
 }
 
 .sidebarButton {
-  background: #2587b4;
+  background: #1c6a8f;
   font-size: 30px;
+  font-family: 'Enriqueta', serif;
   color: white;
   border: none;
   width: 100%;
@@ -44,15 +46,15 @@
 }
 
 .sidebarButton:hover {
-  -webkit-box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
-          box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
+  -webkit-box-shadow: -1px -1px 5px #053c53, 1px 1px 5px #053c53;
+          box-shadow: -1px -1px 5px #053c53, 1px 1px 5px #053c53;
   z-index: 1;
   color: gold;
 }
 
 .sidebarButton:focus {
-  -webkit-box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
-          box-shadow: -1px -1px 5px #042b3c, 1px 1px 5px #042b3c;
+  -webkit-box-shadow: -1px -1px 5px #053c53, 1px 1px 5px #053c53;
+          box-shadow: -1px -1px 5px #053c53, 1px 1px 5px #053c53;
   z-index: 1;
   color: gold;
   outline: none;

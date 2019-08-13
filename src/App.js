@@ -1,10 +1,13 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
 import SideBar from '../src/components/sidebar/sidebar';
 import '../src/main.css';
-import AboutPallet from '../src/components/infoPallet/aboutPallet';
-import LanguagesPallet from '../src/components/infoPallet/languagesPallet';
-import ProjectsPallet from '../src/components/infoPallet/projectsPallet';
-import ContactPallet from '../src/components/infoPallet/contactPallet';
+import Config from './config.json';
+import AboutPallet from '../src/components/infoPallets/aboutPallet';
+import LanguagesPallet from '../src/components/infoPallets/languagesPallet';
+import ProjectsPallet from '../src/components/infoPallets/projectsPallet';
+import ContactPallet from '../src/components/infoPallets/contactPallet';
 import Particles from "react-particles-js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -64,9 +67,9 @@ class App extends React.Component {
               <h3>Software Developer</h3>
             </div>
             <div className="socialLinks">
-              <FontAwesomeIcon icon={faGithub} />
-              <FontAwesomeIcon icon={faLinkedin} />
-              <FontAwesomeIcon icon={faFilePdf} />
+              <button><a href={Config.commonUrls.github} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></button>
+              <button><a href={Config.commonUrls.linkedIn} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></button>
+              {/* <button><a href={Config.commonUrls.} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFilePdf} /></a></button> */}
             </div>
           </div>
           <SideBar toggle={this.togglePallets} showPallets={["showAboutPallet", "showLanguagesPallet",
@@ -93,8 +96,8 @@ class App extends React.Component {
               <h3>Software Developer</h3>
             </div>
             <div className="socialLinks">
-              <FontAwesomeIcon icon={faGithub} />
-              <FontAwesomeIcon icon={faLinkedin} />
+              <button><a href={Config.commonUrls.github} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></button>
+              <button><a href={Config.commonUrls.linkedIn} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></button>
               <FontAwesomeIcon icon={faFilePdf} />
             </div>
           </div>
@@ -120,8 +123,8 @@ class App extends React.Component {
               <h3>Software Developer</h3>
             </div>
             <div className="socialLinks">
-              <FontAwesomeIcon icon={faGithub} />
-              <FontAwesomeIcon icon={faLinkedin} />
+              <button><a href={Config.commonUrls.github} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></button>
+              <button><a href={Config.commonUrls.linkedIn} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></button>
               <FontAwesomeIcon icon={faFilePdf} />
             </div>
           </div>

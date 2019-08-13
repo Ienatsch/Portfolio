@@ -1,5 +1,5 @@
 import React from 'react';
-import "../infoPallet/pallet.css";
+import "../infoPallets/pallet.css";
 import Config from "../../config.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -13,6 +13,7 @@ function ProjectsPallet() {
 
     return (
         <div className="pallet">
+            <h3>My <span className="titleAccent">Projects</span></h3>
             <div className="projectsContainer">
                 <figure>
                     <img src="https://ienatsch.github.io/Portfolio/images/seekerImg.png" alt="Seeker-Project" />

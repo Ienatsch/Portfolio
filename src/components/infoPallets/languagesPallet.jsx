@@ -1,10 +1,11 @@
 import React from 'react';
-import "../infoPallet/pallet.css";
+import "../infoPallets/pallet.css";
 
 function LanguagesPallet() {
     return (
         <div className="pallet">
             <div className="palletList">
+            <h3>My <span className="titleAccent">Skills</span></h3>
                 <h4>Languages</h4>
                 <ul>
                     <li>JavaScript</li>
