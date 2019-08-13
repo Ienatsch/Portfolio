@@ -37,7 +37,7 @@
 
 .mainWrapper .mainContainer {
   position: relative;
-  background: #31cce7;
+  background: #ffffff;
   width: 80vw;
   height: 30vh;
   min-height: 250px;
@@ -107,7 +107,7 @@
       justify-content: space-around;
   width: 100%;
   font-size: 30px;
-  color: #ffffff;
+  color: #31cce7;
   margin-top: 25px;
 }
 

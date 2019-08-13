@@ -19,7 +19,7 @@ function LanguagesPallet() {
                 <ul>
                     <li>React</li>
                     <li>Angular</li>
-                    <li>ASP.NET MVC</li>
+                    <li>.NET</li>
                     <li>jQuery</li>
                     <li>Bootstrap</li>
                     <li>SASS</li>

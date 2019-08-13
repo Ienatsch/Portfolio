@@ -1,7 +1,9 @@
 .pallet {
   background: #2587b4;
   width: 70vw;
+  min-width: 400px;
   height: 550px;
+  min-height: 375px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +17,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.pallet::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 @media only screen and (min-width: 800px) {
@@ -76,12 +85,11 @@
 
 .pallet .projectsContainer img {
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
+  vertical-align: middle;
 }
 
-.pallet .formContainer {
-  width: 100%;
-  height: 100%;
+.pallet .projectsContainer figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,29 +99,108 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #31cce7;
+  margin: 0 10px 0 10px;
+  height: 30px;
+  color: white;
+  font-size: 1.3em;
 }
 
-.pallet form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-  width: 50%;
+.pallet .projectsContainer .figIcons {
+  margin-right: -10%;
+}
+
+.pallet .projectsContainer .figIcons svg {
+  margin-left: 10px;
+}
+
+.pallet .projectsContainer .figIcons svg:hover {
+  color: gold;
+}
+
+.pallet .formContainer {
+  width: 100%;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.pallet form textarea {
-  height: 30%;
+.pallet form {
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: [row1] 20% [row2] 20% [row3] 45% [row4] 15%;
+      grid-template-rows: [row1] 20% [row2] 20% [row3] 45% [row4] 15%;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.pallet form #firstName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  height: 35%;
+}
+
+.pallet form #lastName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  height: 35%;
+}
+
+.pallet form #userEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 200%;
+  height: 35%;
+}
+
+.pallet form #userText {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 200%;
+  height: 100%;
 }
 
 .pallet form #submitButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  -ms-grid-row: 4;
+  grid-row: 4/4;
   width: 50%;
+  height: 50%;
 }
 /*# sourceMappingURL=pallet.css.map */

@@ -1,6 +1,9 @@
 import React from 'react';
 import "../infoPallet/pallet.css";
 import Config from "../../config.json";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectsPallet() {
 
@@ -11,13 +14,25 @@ function ProjectsPallet() {
     return (
         <div className="pallet">
             <div className="projectsContainer">
-                <figure onClick={() => routeToProject(Config.projectUrls.SEEKER)}>
+                <figure>
                     <img src="https://ienatsch.github.io/Portfolio/images/seekerImg.png" alt="Seeker-Project" />
-                    <figcaption>SEEKER</figcaption>
+                    <figcaption>
+                        SEEKER
+                        <div className="figIcons">
+                            <FontAwesomeIcon icon={faEye} onClick={() => routeToProject(Config.projectUrls.SEEKER)}/>    
+                            <FontAwesomeIcon icon={faGithub} onClick={() => routeToProject(Config.repoUrls.SEEKER)}/>
+                        </div>   
+                    </figcaption>
                 </figure>
-                <figure onClick={() => routeToProject(Config.projectUrls.NATPK)}>
+                <figure>
                     <img src="https://ienatsch.github.io/Portfolio/images/natpkImg.png" alt="NATPK-Project" />
-                    <figcaption>NATPK</figcaption>
+                    <figcaption>
+                        NATPK
+                        <div className="figIcons">
+                            <FontAwesomeIcon icon={faEye} onClick={() => routeToProject(Config.projectUrls.NATPK)}/>    
+                            <FontAwesomeIcon icon={faGithub} onClick={() => routeToProject(Config.repoUrls.NATPK)}/>
+                        </div>                     
+                    </figcaption>
                 </figure>
             </div>
         </div>
