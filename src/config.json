@@ -1,7 +1,8 @@
 {
     "commonUrls": {
         "github": "https://github.com/Ienatsch",
-        "linkedIn": "https://www.linkedin.com/in/dalan-ienatsch-39997a159/"
+        "linkedIn": "https://www.linkedin.com/in/dalan-ienatsch-39997a159/",
+        "resume": "./files/myResume.doc"
     },
     "projectUrls": {
         "SEEKER": "https://ienatsch.github.io/SEEKER/",

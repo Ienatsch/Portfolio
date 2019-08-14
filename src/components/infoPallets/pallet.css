@@ -252,11 +252,28 @@
   height: 50%;
   font-size: 15px;
   font-family: 'Enriqueta', serif;
-  background: #ffffff;
+  border: none;
+  background: #666565da;
 }
 
 .pallet form #submitButton .submitIcon {
   color: #1c6a8f;
   margin-top: 3px;
+}
+
+.pallet form p {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 4;
+  grid-row: 4/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  margin-top: 10px;
+  color: orange;
+  padding-top: 15px;
 }
 /*# sourceMappingURL=pallet.css.map */

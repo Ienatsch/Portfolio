@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { Link } from 'react-router-dom';
 import SideBar from '../src/components/sidebar/sidebar';
 import '../src/main.css';
 import Config from './config.json';
@@ -69,7 +67,7 @@ class App extends React.Component {
             <div className="socialLinks">
               <button><a href={Config.commonUrls.github} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></button>
               <button><a href={Config.commonUrls.linkedIn} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></button>
-              {/* <button><a href={Config.commonUrls.} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFilePdf} /></a></button> */}
+              <button><a href={Config.commonUrls.resume} download><FontAwesomeIcon icon={faFilePdf} /></a></button>
             </div>
           </div>
           <SideBar toggle={this.togglePallets} showPallets={["showAboutPallet", "showLanguagesPallet",
@@ -89,7 +87,7 @@ class App extends React.Component {
             "showProjectsPallet", "showContactPallet"]} />
           <div className="mainContainer">
             <div className="myImage">
-              <img src="images/picture-of-me.jpg" alt="Me"></img>
+              <img src="images/me.jpg" alt="Me"></img>
             </div>
             <div className="nameTitle">
               <h1>Dalan Ienatsch</h1>
@@ -98,7 +96,7 @@ class App extends React.Component {
             <div className="socialLinks">
               <button><a href={Config.commonUrls.github} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></button>
               <button><a href={Config.commonUrls.linkedIn} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></button>
-              <FontAwesomeIcon icon={faFilePdf} />
+              <button><a href={Config.commonUrls.resume} download><FontAwesomeIcon icon={faFilePdf} /></a></button>
             </div>
           </div>
           {this.state.showAboutPallet && <AboutPallet />}
@@ -116,7 +114,7 @@ class App extends React.Component {
             "showProjectsPallet", "showContactPallet"]} />
           <div className="mainContainer">
             <div className="myImage">
-              <img src="images/picture-of-me.jpg" alt="Me"></img>
+              <img src="images/me.jpg" alt="Me"></img>
             </div>
             <div className="nameTitle">
               <h1>Dalan Ienatsch</h1>
@@ -125,7 +123,7 @@ class App extends React.Component {
             <div className="socialLinks">
               <button><a href={Config.commonUrls.github} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></button>
               <button><a href={Config.commonUrls.linkedIn} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></button>
-              <FontAwesomeIcon icon={faFilePdf} />
+              <button><a href={Config.commonUrls.resume} download><FontAwesomeIcon icon={faFilePdf} /></a></button>
             </div>
           </div>
           {this.state.showAboutPallet && <AboutPallet />}

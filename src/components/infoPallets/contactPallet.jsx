@@ -9,11 +9,12 @@ function ContactPallet() {
             <h3>Contact <span className="titleAccent">Me</span></h3>
             <div className="formContainer">
                 <form>
-                    <input type="text" id="firstName" placeholder="First Name"/>
-                    <input type="text" id="lastName" placeholder="Last Name"/>
-                    <input type="text" id="userEmail" placeholder="Email"/>
-                    <textarea type="text" id="userText" placeholder="Message"/>
-                    <button type="button" id="submitButton">Send <FontAwesomeIcon className="submitIcon" icon={faEnvelope} /></button>
+                    <input type="text" id="firstName" placeholder="First Name" disabled/>
+                    <input type="text" id="lastName" placeholder="Last Name" disabled/>
+                    <input type="text" id="userEmail" placeholder="Email" disabled/>
+                    <textarea type="text" id="userText" placeholder="Message" disabled/>
+                    <p id="message">This form is currently under construction. <br /> I am able to be reached through LinkedIn.</p>
+                    <button type="button" id="submitButton" disabled>Send <FontAwesomeIcon className="submitIcon" icon={faEnvelope} /></button>
                 </form>
             </div>
         </div>

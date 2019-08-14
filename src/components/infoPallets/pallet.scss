@@ -195,12 +195,24 @@ $darkBlue: #042b3c;
             height: 50%;
             font-size: 15px;
             font-family: 'Enriqueta', serif;
-            background: #ffffff;
+            border: none;
+            background: #666565da;
             
             .submitIcon {
                 color: $midBlue;
                 margin-top: 3px;
             }
+        }
+
+        p {
+            grid-column: 1/1;
+            grid-row: 4/4;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            margin-top: 10px; //Remove once form is working
+            color: orange; // Change once form is working
+            padding-top: 15px; //Remove once form is working
         }
     }
 }
