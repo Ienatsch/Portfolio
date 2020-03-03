@@ -179,6 +179,7 @@ $darkBlue: #042b3c;
             grid-column: 1/2;
             width: 200%;
             height: 100%;
+            resize: none;
         }
 
         #submitButton {
@@ -194,9 +195,7 @@ $darkBlue: #042b3c;
             min-height: 40px;
             height: 50%;
             font-size: 15px;
-            font-family: 'Enriqueta', serif;
-            border: none;
-            background: #666565da;
+            font-family: 'Enriqueta', serif;      
             
             .submitIcon {
                 color: $midBlue;
@@ -210,9 +209,6 @@ $darkBlue: #042b3c;
             display: flex;
             align-self: center;
             justify-self: center;
-            margin-top: 10px; //Remove once form is working
-            color: orange; // Change once form is working
-            padding-top: 15px; //Remove once form is working
         }
     }
 }

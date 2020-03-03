@@ -1,4 +1,4 @@
-@import url(c:\Users\diena\Documents\Desktop Icons\Code Master Folder\GitHub Pages\portfolio\src\main.css);
+@import url(c:\Users\diena\Desktop\Code Master Folder\GitHub Pages\portfolio\src\main.css);
 .pallet {
   position: relative;
   background: #1c6a8f;
@@ -230,6 +230,7 @@
   grid-column: 1/2;
   width: 200%;
   height: 100%;
+  resize: none;
 }
 
 .pallet form #submitButton {
@@ -252,8 +253,6 @@
   height: 50%;
   font-size: 15px;
   font-family: 'Enriqueta', serif;
-  border: none;
-  background: #666565da;
 }
 
 .pallet form #submitButton .submitIcon {
@@ -272,8 +271,5 @@
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
-  margin-top: 10px;
-  color: orange;
-  padding-top: 15px;
 }
 /*# sourceMappingURL=pallet.css.map */
