@@ -5,12 +5,11 @@ function LanguagesPallet() {
     return (
         <div className="pallet">
             <div className="palletList">
-            <h3>My <span className="titleAccent">Skills</span></h3>
+                <h3>My <span className="titleAccent">Skills</span></h3>
                 <h4>Languages</h4>
                 <ul>
-                    <li>JavaScript</li>
+                    <li>JavaScript/TypeScript</li>
                     <li>C#</li>
-                    <li>Go</li>
                     <li>PHP</li>
                     <li>SQL</li>
                 </ul>
@@ -21,8 +20,6 @@ function LanguagesPallet() {
                     <li>React</li>
                     <li>Angular</li>
                     <li>.NET</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
                     <li>SASS</li>
                 </ul>
             </div>
@@ -31,8 +28,8 @@ function LanguagesPallet() {
                 <ul>
                     <li>MS SQL Server</li>
                     <li>MySQL</li>
+                    <li>PostgreSQL</li>
                     <li>MongoDB</li>
-                    <li>Photoshop</li>
                     <li>Jira</li>
                 </ul>
             </div>
